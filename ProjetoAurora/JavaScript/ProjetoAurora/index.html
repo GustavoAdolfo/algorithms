@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Projeto Aurora em JavaScript</title>
+
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="Content/Site.css" media="all" />
+
+    <script type="text/javascript" src="Scripts/modernizr-2.8.3.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> <a href="/index.html" area="" class="navbar-brand">Projeto Aurora JS</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/index.html" area="" class="">Início</a></li>
+                    <li><a href="mailto:gustavo.adolfo.as@gmail.com?subject=Projeto%20Aurora%20JS" area="">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <div class="jumbotron">
+            <h1>Projeto Aurora</h1>
+            <ul class="lead">
+                <li>5 dados são rolados pelo jogador</li>
+                <li>Os dados são comparados contra 15 categorias de pontuação</li>
+                <li>O jogador escolhe em qual categoria deseja pontuar, de forma a obter o melhor resultado possível</li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <h2>Jogar</h2>
+                <ul class="list-unstyled" id="listaDados"></ul>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button class="btn btn-success" title="Clique para jogar" id="btnLancamento">Lançar os dados</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <h2>Escolha uma regra de pontuação</h2>
+                <ul class="list-unstyled list-group" id="listaRegras"></ul>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Sua pontuação</h2>
+                        <p class="text-info">Somando <span id="info-pontos">x</span> pontos para você!</p>
+                        <p>Informe seu nome e entre para o rankin!</p>
+                        <form method="post" action="#" enctype="text/plain">
+                            <input type="text" placeholder="seu nome" maxlength="40" name="jogador" id="txtJogador" />
+                            <input type="submit" class="btn btn-primary btn-sm" value="Classificar!" />
+                        </form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Ranking</h2>
+                        <ol>
+                            <li>A</li>
+                            <li>B</li>
+                            <li>C</li>
+                            <li>D</li>
+                            <li>E</li>
+                        </ol>
+                        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301872">Learn more &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+        <footer>
+            <p>&copy; 06/12/2017 - Implementação do Projeto Aurora em JavaScript</p>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="Scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Scripts/aurora.js"></script>
+    <script type="text/javascript" src="Scripts/jogo.js"></script>
+</body>
+
+</html>

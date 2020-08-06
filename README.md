@@ -1,12 +1,2 @@
-# algorithms
-
-Implementation of diverses algorithms in distincts programing languages
-
-- BinaryGap
--- C#
-
-- Maximal Disjoint Intervals
--- C#
-
-- Romans
--- C#
+# Diversos_Testes_e_Algoritmos
+Diversos testes de implementação de algorítmos e testes unitários em diversas linguagens.

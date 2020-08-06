@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Descubra o Assassino</title>
+    <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="Content/Site.css" />
+
+    <script type="text/javascript" src="Scripts/modernizr-2.8.3.js"></script>
+</head>
+
+<body class="cena">
+    <div class="container body-content">
+
+
+
+        <header class="jumbotron">
+            <h1 class="">Descubra o Assassino</h1>
+            <p class="lead">O empresário Sean Bean foi assassinado e o corpo dele foi deixado na frente da delegacia de polícia. O Inspetor Jacques Clouseau foi escolhido para investigar este caso. Após uma série de investigações, ele organizou uma lista com prováveis
+                assassinos, os locais do crime e quais armas poderiam ter sido utilizadas.</p>
+        </header>
+        <div class="row">
+            <div class="col-md-4 listas list-group">
+                <h2>Aponte um dos suspeitos</h2>
+                <ul id="listaSuspeitos"></ul>
+            </div>
+            <div class="col-md-4 listas">
+                <h2>Indique a arma do crime</h2>
+                <ul id="listaArmas"></ul>
+            </div>
+            <div class="col-md-4 listas">
+                <h2>Defina o local do crime</h2>
+                <ul id="listaLocais"></ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <button class="btn btn-lg btn-warning" id="btnSuspeita">Solucionar o caso</button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalResultado" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h1 id="tituloModal"></h1>
+                    </div>
+                    <div class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+    </div>
+
+    <script type="text/javascript" src="Scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Scripts/site.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+body.cena {
+    background-image: url("/imgs/crime_scene.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+header.jumbotron h1, header.jumbotron p {
+    color: #ffd700;
+}
+
+header.jumbotron {
+    background-color: #323232;
+    background-color: rgba(50, 50, 50, .9);
+}
+
+.listas {
+    background-color: #191919;
+    background-color: rgba(25, 25, 25, .75);
+    color: #fff;
+    box-shadow: 2px 3px #ffe799;
+    -ms-border-radius: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+    .listas h2 {
+        border-bottom: 1px solid #fff;
+    }
+
+.clear {
+    display: block;
+    height: 30px;
+}
+
+.btn-warning {
+    color: #ff0000;
+}
