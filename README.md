@@ -1,4 +1,4 @@
-# algorithms
+# algorithms :heavy_check_mark:
 
 Implementation of diverses algorithms, tests and small projects in distincts programing languages.
 
