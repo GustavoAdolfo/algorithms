@@ -1,7 +1,8 @@
 # algorithms
 
-Implementation of diverses algorithms in distincts programing languages
-Diversos testes e implementações de algorítmos em várias linguagens.
+Implementation of diverses algorithms, tests and small projects in distincts programing languages.
+
+Diversos testes, pequenos projetos e implementações de algorítmos em várias linguagens.
 
 
 ![GitHub language count](https://img.shields.io/github/languages/count/GustavoAdolfo/algorithms?style=plastic)
