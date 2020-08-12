@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<locais>
+	<local id="1" nome="Etérnia" />
+	<local id="2" nome="Vulcano" />
+	<local id="3" nome="Tatooine" />
+	<local id="4" nome="Springfield" />
+	<local id="5" nome="Gotham" />
+	<local id="6" nome="Nova York" />
+	<local id="7" nome="Sibéria" />
+	<local id="8" nome="Machu Picchu" />
+	<local id="9" nome="Acre" />
+	<local id="10" nome="São Paulo" />
+</locais>

@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+@model IEnumerable<VideoViewModel>
+<div style="margin-bottom:10px; margin-left:10px">
+    <a class="btn btn-success" asp-action="Create" asp-controller="Home">Create</a>
+</div>
+<hr />
+@foreach (var video in Model)
+{
+    @Html.Partial("_Video", video)
+}
+
+@section footer{
+    <hr />
+    <div>This is the index footer</div>
+}

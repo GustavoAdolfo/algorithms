@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+@model VideoViewModel
+
+<div>@Html.ActionLink("Home", "Index")</div>
+<hr />
+<div>Id: @Model.Id</div>
+<div>Title: @Model.Title</div>
+<div>Genre: @Model.Genre</div>
+
+@section footer{
+    <hr />
+    <div>This is the details footer</div>
+}

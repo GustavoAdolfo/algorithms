@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<armas>
+	<arma id="1" nome="Cajado Devastador" />
+	<arma id="2" nome="Phaser" />
+	<arma id="3" nome="Peixeira" />
+	<arma id="4" nome="Trezoitão" />
+	<arma id="5" nome="Sabre de Luz" />
+	<arma id="6" nome="Bomba" />
+	<arma id="7" nome="Pistola de Peixe-Piranha" />
+	<arma id="8" nome="Marreta" />
+	<arma id="9" nome="Visão de Calor" />
+	<arma id="10" nome="Anel do Poder" />
+</armas>
