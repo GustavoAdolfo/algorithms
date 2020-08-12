@@ -1,6 +1,7 @@
-# Diversos_Testes_e_Algoritmos
+# algorithms
 
-Diversos testes de implementação de algorítmos e testes unitários em diversas linguagens.
+Implementation of diverses algorithms in distincts programing languages
+Diversos testes e implementações de algorítmos em várias linguagens.
 
 
 ![GitHub language count](https://img.shields.io/github/languages/count/GustavoAdolfo/algorithms?style=plastic)
