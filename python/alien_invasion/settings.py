@@ -6,8 +6,8 @@ class Settings():
     def __init__(self):
         """ Inicializa as configurações do jogo """
         # Configurações de tela
-        self.screen_width = 1300
-        self.screen_height = 700
+        self.screen_width = 1200
+        self.screen_height = 800
         self.bg_color = (20,20,60)
 
         # Configurações da espaçonave
