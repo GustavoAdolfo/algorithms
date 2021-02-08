@@ -23,8 +23,7 @@ def check_keyup_events(event, ship):
     elif event.key == pygame.K_LEFT:
         ship.moving_left = False
 
-
-def check_events(ai_settings, screen, ship, bullets):
+def check_events( ai_settings, screen, stats, play_button, ship, aliens, bullets):
     """ Responde a eventos de pressionamento de teclas e de mouse """
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -33,6 +32,25 @@ def check_events(ai_settings, screen, ship, bullets):
             check_keydown_events(event, ai_settings, screen, ship, bullets)
         elif event.type == pygame.KEYUP:
             check_keyup_events(event, ship)
+        elif event.type = pygame.MOUSEBUTTONDOWN:
+            mouse_x, mouse_y = pygame.mouse.get_pos()
+            check_play_button(ai_settings, screen, stats, play_button, ship, aliens, bullets, mouse_x, mouse_y)
+
+def check_play_button(ai_settings, screen, stats, play_button, ship, aliens, bullets, mouse_x, mouse_y):
+    """ Inicia um novo jogo quando o jogador clicar em play """
+    button_clicked = play_button.rect.collidepoint(mouse_x, mouse_y)
+    if button_clicked and not stats.game_active:
+        # Reinicia os dados estatísticos do jogo
+        stats.reset_stats()
+        stats.game_active = True
+
+        # Esvasia a lista de alienígenas e de projéties
+        aliens.empty()
+        bullets.empty()
+
+        # Cria uma nova frota e centraliza a espaçonave
+        create_fleet(ai_settings, screen, ship, aliens)
+        ship.center_ship()
 
 
 def update_screen(ai_settings, screen, stats, ship, aliens, bullets, play_button):
@@ -79,7 +97,7 @@ def fire_bullet(ai_settings, screen, ship, bullets):
 def get_number_aliens_x(ai_settings, alien_width):
     """ Determina o número de alienígenas que cabem em uma linha """
     # O espaçamento entre os alienígenas é igual à largura de um alienígena    
-    available_space_x = ai_settings.screen_width - 2 * alien_width
+    available_space_x = ai_settings.screen_width - (2 * alien_width)
     number_aliens_x = int(available_space_x / (2 * alien_width))
     return number_aliens_x
 
@@ -88,9 +106,9 @@ def create_alien(ai_settings, screen, aliens, alien_number, row_number):
     """ Cria um alienígena e o posiciona na linha """
     alien = Alien(ai_settings, screen)
     alien_width = alien.rect.width
-    alien.x = alien_width + 2 * alien_width * alien_number
+    alien.x = alien_width + (2 * alien_width * alien_number)
     alien.rect.x = alien.x
-    alien.rect.y = alien.rect.height + 2 * alien.rect.height * row_number
+    alien.rect.y = alien.rect.height + (2 * alien.rect.height * row_number)
     aliens.add(alien)
 
 
@@ -110,7 +128,7 @@ def create_fleet(ai_settings, screen, ship, aliens):
 
 def get_number_rows(ai_settings, ship_height, alien_height):
     """ Determina o número de linhas com alienígenas que cabem na tela """
-    available_space_y = (ai_settings.screen_height - (3 * alien_height) - ship_height)
+    available_space_y = ai_settings.screen_height - ((3 * alien_height) - ship_height)
     number_rows = int(available_space_y / (2 * alien_height))
     return number_rows
 
