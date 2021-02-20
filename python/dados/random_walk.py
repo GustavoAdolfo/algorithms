@@ -17,7 +17,7 @@ class RandomWalk:
         while len(self.x_values) < self.num_points:
             # Decide a direção a ser seguida e a distância a ser percorrida nessa direção
             x_direction = choice([1, -1])
-            x_distance = choice([0, 1, 2, 3, 4])
+            x_distance = choice([0, 1, 2, 3, 4, 5, 6, 7])
             x_step = x_direction * x_distance
             y_direction = choice([1, -1])
             y_distance = choice([0, 1, 2, 3, 4])
